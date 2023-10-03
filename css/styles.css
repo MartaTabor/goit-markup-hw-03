@@ -6,6 +6,16 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --navy-blue-color: #2e2f42;
   --iris-color: #4d5ae5;
@@ -22,6 +32,7 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .section {
@@ -126,6 +137,7 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
 }
 
 .order-button {
@@ -146,6 +158,21 @@ body {
 .order-button:hover,
 .order-button:focus {
   background-color: var(--ocean-color);
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.services-item {
+  flex-basis: calc((100% - 72px) / 4);
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .small-header {
