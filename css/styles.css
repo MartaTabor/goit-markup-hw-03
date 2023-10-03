@@ -10,8 +10,7 @@ h1,
 h2,
 h3,
 p,
-ul,
-li {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -52,6 +51,7 @@ li {
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 
 .logo {
@@ -115,8 +115,6 @@ li {
 .footer-section {
   background-color: var(--navy-blue-color);
   height: 312px;
-  display: flex;
-  align-items: center;
 }
 
 .footer-note {
@@ -124,6 +122,7 @@ li {
   line-height: 1.5;
   letter-spacing: 0.32px;
   width: 16.5em;
+  margin-top: 17.5px;
 }
 
 .order-section {
