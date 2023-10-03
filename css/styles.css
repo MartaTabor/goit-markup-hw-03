@@ -103,12 +103,16 @@ body {
 
 .footer-section {
   background-color: var(--navy-blue-color);
+  height: 312px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-note {
   color: var(--cloud-color);
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 .order-section {
