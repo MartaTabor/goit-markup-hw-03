@@ -59,11 +59,14 @@ ul {
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  height: 72px;
+}
+
+.header-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
 }
 
 .logo {
@@ -74,6 +77,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 72px;
 }
 
 .footer-logo {
@@ -86,8 +90,6 @@ ul {
 
 .navigation {
   display: flex;
-  align-items: center;
-  gap: 76px;
 }
 
 .page-navigation {
@@ -220,14 +222,31 @@ ul {
   background-color: var(--cloud-color);
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .team-tile {
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-header {
+  text-align: center;
+  margin-top: 32px;
 }
 
 .job-title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .filter-button {
