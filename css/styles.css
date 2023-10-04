@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white-color);
   color: var(--slate-color);
-  width: 90em;
   margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@ ul {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .section {
@@ -149,7 +148,6 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 16px 32px;
-  gap: 10px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -162,15 +160,12 @@ ul {
 .services-section {
   display: flex;
   justify-content: space-around;
+  flex-basis: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
 .services-item {
-  flex-basis: calc((100% - 72px) / 4);
-  display: flex;
-  width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
   gap: 8px;
 }
 
@@ -180,6 +175,7 @@ ul {
   color: var(--navy-blue-color);
   font-size: var(--third-heading-size);
   font-weight: var(--third-heading-weight);
+  margin-bottom: 8px;
 }
 
 .services-description {
