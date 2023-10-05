@@ -32,6 +32,7 @@ button {
   --slate-color: #434455;
   --white-color: #ffffff;
   --cloud-color: #f4f4fd;
+  --cornflower-color: #e7e9fc;
   --second-heading-size: 36px;
   --second-heading-weight: 700;
   --third-heading-size: 20px;
@@ -258,15 +259,23 @@ button {
   margin-bottom: 32px;
 }
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 72px;
+}
+
 .filter-button {
   font-family: "Roboto", sans-serif;
   background-color: var(--cloud-color);
-  border-color: var(--cloud-color);
+  border: 1px solid var(--cornflower-color);
   color: var(--iris-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 12px 24px;
 }
 
 .filter-button:hover,
@@ -274,6 +283,8 @@ button {
   background-color: var(--ocean-color);
   border-color: var(--ocean-color);
   color: var(--white-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-header {
