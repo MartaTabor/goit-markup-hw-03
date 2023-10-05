@@ -234,6 +234,10 @@ button {
   margin-bottom: 72px;
 }
 
+.third-section {
+  padding-top: 0;
+}
+
 .third-section-list {
   display: flex;
   gap: 24px;
