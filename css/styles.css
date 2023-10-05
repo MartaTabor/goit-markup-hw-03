@@ -55,7 +55,7 @@ button {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 
 .section {
@@ -90,7 +90,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-right: 72px;
+  margin-right: 76px;
 }
 
 .footer-logo {
@@ -103,6 +103,7 @@ button {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .page-navigation {
@@ -115,6 +116,7 @@ button {
 
 .page-link {
   color: var(--navy-blue-color);
+  padding: 24px 0;
 }
 
 .page-link:hover,
@@ -141,19 +143,25 @@ button {
 
 .footer-section {
   background-color: var(--navy-blue-color);
+  padding: 100px 0;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-note {
   color: var(--cloud-color);
   line-height: 1.5;
   letter-spacing: 0.32px;
-  width: 16.5em;
-  margin-top: 17.5px;
+  max-width: 264px;
 }
 
 .order-section {
   background-color: var(--navy-blue-color);
   text-align: center;
+  padding: 188px 0;
 }
 
 .main-header {
@@ -163,6 +171,7 @@ button {
   line-height: 1.07;
   letter-spacing: 1.12px;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .order-button {
@@ -175,6 +184,8 @@ button {
   letter-spacing: 0.04em;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  min-width: 169px;
 }
 
 .order-button:hover,
@@ -185,13 +196,13 @@ button {
 .services-section {
   display: flex;
   justify-content: space-around;
-  flex-basis: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
 .services-item {
   display: block;
   gap: 8px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .small-header {
@@ -224,8 +235,11 @@ button {
 .third-section-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 48px) / 3);
   padding-bottom: 120px;
+}
+
+.third-section-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .team-section {
@@ -246,9 +260,13 @@ button {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-description {
+  padding: 32px 0;
+}
+
 .team-header {
   text-align: center;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .job-title {
@@ -256,14 +274,17 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
   text-align: center;
-  margin-bottom: 32px;
+}
+
+.portfolio-main-section {
+  padding: 96px 0 120px 0;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filter-button {
@@ -281,7 +302,7 @@ button {
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--ocean-color);
-  border-color: var(--ocean-color);
+  border: 1px solid transparent;
   color: var(--white-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -290,8 +311,19 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.portfolio-description {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-header {
@@ -300,9 +332,6 @@ button {
   font-size: var(--third-heading-size);
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 16px 0 16px;
-  border-left: 1px solid var(--cornflower-color);
-  border-right: 1px solid var(--cornflower-color);
 }
 
 .portfolio-paragraph {
@@ -310,8 +339,4 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 8px 16px 32px 16px;
-  border-left: 1px solid var(--cornflower-color);
-  border-right: 1px solid var(--cornflower-color);
-  border-bottom: 1px solid var(--cornflower-color);
 }
