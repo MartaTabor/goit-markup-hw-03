@@ -170,7 +170,9 @@ button {
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
-  margin: 0 auto 48px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .order-button {
