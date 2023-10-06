@@ -55,7 +55,7 @@ button {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .section {
@@ -73,13 +73,12 @@ button {
 }
 
 .page-header {
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-bottom: 1px solid var(--cornflower-color, #e7e9fc);
 }
 
 .header-layout {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .logo {
@@ -116,6 +115,7 @@ button {
 
 .page-link {
   color: var(--navy-blue-color);
+  display: inline-block;
   padding: 24px 0;
 }
 
@@ -134,6 +134,8 @@ button {
   color: var(--slate-color);
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: inline-block;
+  padding: 24px 0;
 }
 
 .address-link:hover,
